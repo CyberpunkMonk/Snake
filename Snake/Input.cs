@@ -1,0 +1,19 @@
+﻿using System.Collections;
+using System.Windows.Forms;
+
+namespace Snake {
+    class Input {
+        private static Hashtable keys = new Hashtable();
+
+        public static void ChangeState(Keys key,bool state) {
+            keys[key]=state;
+        }
+
+        public static bool Pressed(Keys key) {
+            if(keys[key]==null)
+                return false;
+            else
+                return (bool)keys[key];
+        }
+    }
+}
