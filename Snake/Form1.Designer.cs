@@ -38,6 +38,7 @@
             this.pbCanvas.Size = new System.Drawing.Size(320, 240);
             this.pbCanvas.TabIndex = 0;
             this.pbCanvas.TabStop = false;
+            this.pbCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.pbCanvas_Paint);
             // 
             // Form1
             // 
@@ -46,6 +47,7 @@
             this.ClientSize = new System.Drawing.Size(346, 265);
             this.Controls.Add(this.pbCanvas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
