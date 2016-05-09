@@ -146,6 +146,5 @@ namespace Snake {
         private void Form1_KeyUp(Object sender, KeyEventArgs e) {
             Input.ChangeState(e.KeyCode,false);
         }
-
     }
 }
