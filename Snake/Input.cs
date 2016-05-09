@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Windows.Forms;
-
 namespace Snake {
     class Input {
         private static Hashtable keys = new Hashtable();
@@ -12,8 +11,7 @@ namespace Snake {
         public static bool Pressed(Keys key) {
             if(keys[key]==null)
                 return false;
-            else
-                return (bool)keys[key];
+            return (bool)keys[key];
         }
     }
 }
